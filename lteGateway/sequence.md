@@ -7,17 +7,14 @@ sequenceDiagram
     親機　->+ 親機 :  
     親機　-->>+ 親機 : LTE 接続 
 　　子機1 -->>+ 子機1 : TimerWakeUp
-    子機1 ->> 親機 : WOR(WakeOnRadio)で親機を起こす
     子機1 ->> 親機 : センサー値送信
     子機1 -->>- 子機1 : DeepSleep
     親機 -->> 親機 : LTE送信
 　　子機2 -->>+ 子機2 : TimerWakeUp
-    子機2 ->> 親機 : WOR(WakeOnRadio)で親機を起こす
     子機2 ->> 親機 : センサー値送信
     子機2 -->>- 子機2 : DeepSleep
     親機 -->> 親機 : LTE送信
 　　子機3 -->>+ 子機3 : TimerWakeUp
-    子機3 ->> 親機 : WOR(WakeOnRadio)で親機を起こす
     子機3 ->> 親機 : センサー値送信
     子機3 -->>- 子機3 : DeepSleep
     親機 -->> 親機 : LTE送信
